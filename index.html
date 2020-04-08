@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style/index.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+    <title>Dan Brioli's Time Machine</title>
 </head>
 <body>
     
+    <header>
+    
+        <nav>
+    
+            <a href="index.html" class="navbutton">Home</a>
+            <a href="about.html" class="navbutton">About</a>
+            <a href="projects.html" class="navbutton">Projects</a>
+            <a href="contact.html" class="navbutton">Contact</a>    <!-- Eventually create some pixel art old school button images, circa win3.1? mac? unix? -->
+    
+        </nav><br><br>
+    
+        <span>>dan_brioli.exe</span><br><br> <!-- Yes, I know I broke the Option 3 wireframe here. This was purposeful in this case. (Future design exploration.) -->
+
+        <span>Loading... Please wait...</span><br><br><br><br> <!-- Future: Add delay and text animation to simulate console loading screens -->
+                                                               <!-- Also future: It is unlikely this design will work well with mobile, so an alternate design will
+                                                                    need to be made for those devices to cut through this cheeky BS. -->
+    
+    </header>
+
+    <section>
+
+        <span>You are standing in an open field west of a white <u>h</u>ouse, with a boarded front <u>d</u>oor.</span><br><br>
+
+        <span>There is a small web <u>b</u>rowser here.</span><br><br><br><br>
+
+        <span>>█</span><br><br> <!-- Eventually I plan on making a page that simulates a command line with "adventure" style text input and output once we 
+                                     get into some JS. The image below will be replaced with the "console" output and inputs. Probably replace the above too,
+                                     and just make a significant chunk of the body here the interactive "console" -->
+
+        <img src="https://picsum.photos/800/250" alt="A temp img."><br><br> <!-- https://picsum.photos/200/300 (width/height are the params) -->
+
+    </section>
+
+    <section class="gallerysection">
+
+        <div id="#galleryimgs">
+            <img src="https://picsum.photos/125/200" alt="A temp img." class="galleryimg">
+            <img src="https://picsum.photos/125/200" alt="A temp img." class="galleryimg">
+            <img src="https://picsum.photos/125/200" alt="A temp img." class="galleryimg">
+            <img src="https://picsum.photos/125/200" alt="A temp img." class="galleryimg">
+        </div>
+
+        <span class="gallerytext">These are some other projects that don't involve a fake console game from the 80s.</span>
+
+    </section>
+
+    <footer class="footersection">
+
+        <a href="contact.html" class="navbutton">Contact Me</a> <!-- I chose to use links instead of buttons to match the weird semi-button styling above -->
+        <a href="projects.html" class="navbutton">My Projects</a> <!-- These 2 seem kind of redundant with the nav bar above imo -->
+        <a href="https://twitter.com/TechDebtGames" class="navbutton">Tweets</a>
+        <a href="https://github.com/technicaldebtgames/" class="navbutton">Gits</a>
+
+    </footer>
+
 </body>
 </html>
