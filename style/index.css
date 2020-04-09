@@ -148,6 +148,7 @@ p {
 .gallerytext {
 
     margin: auto;
+    margin-bottom: 3rem;
 
 }
 
@@ -162,6 +163,16 @@ p {
     flex-direction: row;
     justify-content: center;
     color: white;
+
+}
+
+.adventure {
+
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 0.3rem;
+    border-style: solid;
+    border-color: white;
 
 }
 
@@ -191,14 +202,8 @@ p {
 
     body {
 
-        margin: auto;
         max-width: 70rem;
-        font-family: 'Source Code Pro', monospace;
         font-size: 2rem;
-        background-color: black;
-        border-width: 1px;
-        border-color: black;
-        border-style: solid;
         padding: 1rem;
     
     }
@@ -209,14 +214,8 @@ p {
 
     body {
 
-        margin: auto;
         max-width: 60rem;
-        font-family: 'Source Code Pro', monospace;
         font-size: 1.875rem;
-        background-color: black;
-        border-width: 1px;
-        border-color: black;
-        border-style: solid;
         padding: 0.9rem;
     
     }
@@ -227,14 +226,8 @@ p {
 
     body {
 
-        margin: auto;
         max-width: 50rem;
-        font-family: 'Source Code Pro', monospace;
         font-size: 1.75rem;
-        background-color: black;
-        border-width: 1px;
-        border-color: black;
-        border-style: solid;
         padding: 0.8rem;
     
     }
@@ -245,14 +238,8 @@ p {
 
     body {
 
-        margin: auto;
         max-width: 40rem;
-        font-family: 'Source Code Pro', monospace;
         font-size: 1.625rem;
-        background-color: black;
-        border-width: 1px;
-        border-color: black;
-        border-style: solid;
         padding: 0.7rem;
     
     }
@@ -263,14 +250,8 @@ p {
 
     body {
 
-        margin: auto;
         max-width: 30rem;
-        font-family: 'Source Code Pro', monospace;
-        font-size: 2rem;
-        background-color: black;
-        border-width: 1px;
-        border-color: black;
-        border-style: solid;
+        font-size: 1.5rem;
         padding: 0.6rem;
     
     }
