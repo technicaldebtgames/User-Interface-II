@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+
 /* Consider adding a border to everything, and then taking it off when done styling. */
 
 /* This is the meyer reset */
@@ -47,31 +49,27 @@ table {
 }
 /* End of meyer reset */
 
-/* Add a temporary border for styling debugging/visualization */
-/* {
-
-    box-sizing:border-box;
-    padding:0;
-    margin:0;
-    max-width:100%;
-
-}*/
-/* End of temp border style */
-
 /* Custom style below */
 
-/* font-family: 'Source Code Pro', monospace; */
+/* font-family: 'Source Code Pro', monospace; This is the CSS style for the terminal-style monospace text with a fallback default monospace.*/
+
+html {
+
+    font-size:62.5%; /* Went with this so rem values are more closely aligned with "pixels" */
+
+}
 
 body {
 
     margin: auto;
-    width: 800px;
+    max-width: 80rem;
     font-family: 'Source Code Pro', monospace;
+    font-size: 2rem;
     background-color: black;
     border-width: 1px;
     border-color: black;
     border-style: solid;
-    padding: 10px;
+    padding: 1rem;
 
 }
 
@@ -81,18 +79,31 @@ nav {
     flex-direction: row;
     justify-content: center;
     color: white;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    border-bottom: 0.3rem;
+    border-style: solid;
+    border-color: white;
 
 }
 
-.navbutton {
+.fakebutton {
 
-    margin: 5px;
-    padding: 10px;
+    margin: 0.5rem;
+    padding: 1rem;
     border-color: gray;
-    border-width: 3px;
+    border-width: 0.3rem;
     border-style: solid;
     color: black;
     background-color: #BBBBBB;
+    text-decoration: none;
+
+}
+
+.fakebutton:active {
+
+    border-color: #666666;
+    background-color: #888888;
 
 }
 
@@ -108,43 +119,172 @@ p {
 
 }
 
-.gallerysection {
+#projectgallery {
 
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-}
-
-.galleryimg {
-
-    margin: auto;
 
 }
 
 #galleryimgs {
 
-    width: 600px;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+
+}
+
+.galleryimg {
+
+    width: 20%;
+    margin: auto;
+    padding: 1rem 1rem 1rem 1rem;
 
 }
 
 .gallerytext {
 
-    width: 200px;
     margin: auto;
-    padding: 15px;
 
 }
 
 .footersection {
 
-    margin-top: 30px;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 0.3rem;
+    border-style: solid;
+    border-color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
     color: white;
+
+}
+
+.screenreader {
+
+    display: none;
+
+}
+
+.mobilealert {
+
+    display: none;
+
+}
+
+@media speech {
+
+    #screenreader {
+
+        display: block;
+
+    }
+
+}
+
+@media screen and (max-width: 900px){
+
+    body {
+
+        margin: auto;
+        max-width: 70rem;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 2rem;
+        background-color: black;
+        border-width: 1px;
+        border-color: black;
+        border-style: solid;
+        padding: 1rem;
+    
+    }
+
+}
+
+@media screen and (max-width: 800px){
+
+    body {
+
+        margin: auto;
+        max-width: 60rem;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 1.875rem;
+        background-color: black;
+        border-width: 1px;
+        border-color: black;
+        border-style: solid;
+        padding: 0.9rem;
+    
+    }
+
+}
+
+@media screen and (max-width: 700px){
+
+    body {
+
+        margin: auto;
+        max-width: 50rem;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 1.75rem;
+        background-color: black;
+        border-width: 1px;
+        border-color: black;
+        border-style: solid;
+        padding: 0.8rem;
+    
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    body {
+
+        margin: auto;
+        max-width: 40rem;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 1.625rem;
+        background-color: black;
+        border-width: 1px;
+        border-color: black;
+        border-style: solid;
+        padding: 0.7rem;
+    
+    }
+
+}
+
+@media screen and (max-width: 500px){
+
+    body {
+
+        margin: auto;
+        max-width: 30rem;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 2rem;
+        background-color: black;
+        border-width: 1px;
+        border-color: black;
+        border-style: solid;
+        padding: 0.6rem;
+    
+    }
+
+    .adventure {
+
+        display: none;
+
+    }
+
+    .mobilealert {
+
+        display: block;
+
+    }
 
 }
