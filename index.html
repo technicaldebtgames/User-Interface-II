@@ -1,66 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+    <title>Everything new is old again.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/index.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
-    <title>Dan Brioli's Time Machine</title>
+
 </head>
+
 <body>
     
     <header>
     
         <nav>
     
-            <a href="index.html" class="navbutton">Home</a>
-            <a href="about.html" class="navbutton">About</a>
-            <a href="projects.html" class="navbutton">Projects</a>
-            <a href="contact.html" class="navbutton">Contact</a>    <!-- Eventually create some pixel art old school button images, circa win3.1? mac? unix? -->
-    
-        </nav><br><br>
-    
-        <span>>dan_brioli.exe</span><br><br> <!-- Yes, I know I broke the Option 3 wireframe here. This was purposeful in this case. (Future design exploration.) -->
+            <a href="index.html" class="fakebutton">Home</a>
+            <a href="about.html" class="fakebutton">About</a>
+            <a href="projects.html" class="fakebutton">Projects</a>
+            <a href="contact.html" class="fakebutton">Contact</a>    <!-- Eventually create some pixel art old school button images, circa win3.1? mac? unix? -->
 
-        <span>Loading... Please wait...</span><br><br><br><br> <!-- Future: Add delay and text animation to simulate console loading screens -->
-                                                               <!-- Also future: It is unlikely this design will work well with mobile, so an alternate design will
-                                                                    need to be made for those devices to cut through this cheeky BS. -->
+        </nav>
     
     </header>
 
-    <section>
+    <section class="adventure">
 
-        <span>You are standing in an open field west of a white <u>h</u>ouse, with a boarded front <u>d</u>oor.</span><br><br>
+        <p>dan_brioli@localbox:~$ adventure-0.1.95.b<br><br></p> <!-- <br> is used here as temporary spacing until this becomes a canvas w/ JS/webgl. -->
 
-        <span>There is a small web <u>b</u>rowser here.</span><br><br><br><br>
+        <p>Loading... Please wait...<br><br><br></p>  <!-- Future: Add delay and text animation to simulate console loading screens
 
-        <span>>█</span><br><br> <!-- Eventually I plan on making a page that simulates a command line with "adventure" style text input and output once we 
-                                     get into some JS. The image below will be replaced with the "console" output and inputs. Probably replace the above too,
-                                     and just make a significant chunk of the body here the interactive "console" -->
+                                                           Also future: It is unlikely this design will work well with mobile, so an alternate design will
+                                                           need to be made for those devices to cut through this cheeky BS.
+                                                           
+                                                           Also also future: This functionality won't work with assisted readers (most likely), so
+                                                           make sure that use case is handled properly when the JS is in place (will it be a canvas and
+                                                           use something like webgl? or will it be text fields? Not sure yet.) -->
 
-        <img src="https://picsum.photos/800/250" alt="A temp img."><br><br> <!-- https://picsum.photos/200/300 (width/height are the params) -->
+        <p>You are standing in an open field west of a white <u>h</u>ouse, with a boarded front <u>d</u>oor.<br><br></p>
+
+        <p>There is a small <u>l</u>aptop here.<br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+
+        <p>>█</p> <!-- Eventually I plan on making a page that simulates a command line with "adventure" style text input and output once we 
+                       get into some JS. The image below will be replaced with the "console" output and inputs. Probably replace the above too,
+                       and just make a significant chunk of the body here the interactive "console". 
+
+                       Maybe check out https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser for a more surefire way of detecting mobile? -->
 
     </section>
 
-    <section class="gallerysection">
+    <section class="mobilealert">
 
-        <div id="#galleryimgs">
-            <img src="https://picsum.photos/125/200" alt="A temp img." class="galleryimg">
-            <img src="https://picsum.photos/125/200" alt="A temp img." class="galleryimg">
-            <img src="https://picsum.photos/125/200" alt="A temp img." class="galleryimg">
-            <img src="https://picsum.photos/125/200" alt="A temp img." class="galleryimg">
+        <p>I'm Dan Brioli, a full stack developer. This is my portfolio.<br><br></p>
+
+        <p>My interests include:<br><br></p>
+
+        <ul>
+            <li>Unconventional but intuitive design.</li>
+            <li>Conventional but elegant design.</li>
+            <li>Game development, particularly procedural generation.</li>
+            <li>Art, humor, philosophy, cooking, and Oxford commas.</li>
+        </ul>
+
+        <p><br></p>
+
+        <p>This site thinks that you are on a mobile device. Feel free to browse, but please take a moment to view it from a computer's web browser to get the full adventure!</p>
+
+    </section>
+
+    <section class="screenreader">
+
+        <p>Hi, my name is Dan Brioli, and I am a full stack developer with an interest in game design and development. Thank you for checking out my portfolio! My work is primarily visual in nature, and I appreciate your visit and have tried to accomodate screen readers as much as possible given these constraints.</p>
+
+    </section>
+
+    <section class="projectgallery">
+
+        <p class="gallerytext">Other projects, prototypes, and musings:</p>
+
+        <div class="galleryimgs">
+            <img src="images/asteroids1.jpg" alt="Asteroid map generator on a hexagonal tile map." class="galleryimg">
+            <img src="images/orbits1.jpg" alt="Custom physics-based solar system." class="galleryimg">
+            <img src="images/deepwork2.jpg" alt="Does Deep Work work?" class="galleryimg">
+            <img src="images/roomgen1.jpg" alt="Room generation hall selection based on distance." class="galleryimg"> <!-- These will probably just be screen caps of the projects/prototypes, no text titles. -->
         </div>
 
-        <span class="gallerytext">These are some other projects that don't involve a fake console game from the 80s.</span>
-
     </section>
 
-    <footer class="footersection">
+    <footer>
 
-        <a href="contact.html" class="navbutton">Contact Me</a> <!-- I chose to use links instead of buttons to match the weird semi-button styling above -->
-        <a href="projects.html" class="navbutton">My Projects</a> <!-- These 2 seem kind of redundant with the nav bar above imo -->
-        <a href="https://twitter.com/TechDebtGames" class="navbutton">Tweets</a>
-        <a href="https://github.com/technicaldebtgames/" class="navbutton">Gits</a>
+        <div class="footersection">
+            <a href="mailto:technicaldebtgames@gmail.com" target="_blank" class="fakebutton">Emailers</a>
+            <a href="https://www.linkedin.com/in/dan-brioli/" target="_blank" class="fakebutton">LinkedInners</a>
+            <a href="https://twitter.com/TechDebtGames" target="_blank" class="fakebutton">Tweeters</a>
+            <a href="https://github.com/technicaldebtgames/" target="_blank" class="fakebutton">Gitters</a>
+        </div>
 
     </footer>
 

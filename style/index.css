@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+
 /* Consider adding a border to everything, and then taking it off when done styling. */
 
 /* This is the meyer reset */
@@ -47,104 +49,330 @@ table {
 }
 /* End of meyer reset */
 
-/* Add a temporary border for styling debugging/visualization */
-/* {
-
-    box-sizing:border-box;
-    padding:0;
-    margin:0;
-    max-width:100%;
-
-}*/
-/* End of temp border style */
-
 /* Custom style below */
 
-/* font-family: 'Source Code Pro', monospace; */
+/* font-family: 'Source Code Pro', monospace; This is the CSS style for the terminal-style monospace text with a fallback default monospace.*/
+
+html {
+
+    font-size:62.5%; /* Went with this so rem values are more closely aligned with "pixels" */
+
+}
 
 body {
 
     margin: auto;
-    width: 800px;
+    max-width: 81rem;
     font-family: 'Source Code Pro', monospace;
+    font-size: 2rem;
     background-color: black;
-    border-width: 1px;
-    border-color: black;
+    border-width: 0px;
+    border-color: white;
     border-style: solid;
-    padding: 10px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;*/
 
 }
 
 nav {
 
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     color: white;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-bottom: 0.15rem;
+    border-radius: 3rem;
+    border-style: solid;
+    border-color: white;
 
 }
 
-.navbutton {
+ul {
 
-    margin: 5px;
-    padding: 10px;
+    list-style-type: disc;
+
+}
+
+li {
+
+    color: white;
+
+}
+
+.fakebutton {
+
+    margin: 0.5rem;
+    padding: 1rem;
     border-color: gray;
-    border-width: 3px;
+    border-width: 0.3rem;
     border-style: solid;
+    border-radius: 1rem;
     color: black;
     background-color: #BBBBBB;
+    text-decoration: none;
+
+}
+
+.fakebutton:active {
+
+    border-color: #666666;
+    background-color: #888888;
 
 }
 
 span {
 
     color: white;
+    display: block; /* block display doesn't seem to add whitespace like I was expecting. Need to find out why to avoid using <br> for formatting. */
 
 }
 
 p {
 
     color: white;
+    display: block;
 
 }
 
-.gallerysection {
+.projectgallery {
 
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-top: 0rem;
+    width: 90%;
+    border-bottom: 0.15rem;
+    border-top: 0.15rem;
+    border-radius: 3rem;
+    border-style: solid;
+    border-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.galleryimgs {
+
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 
 .galleryimg {
 
-    margin: auto;
-
-}
-
-#galleryimgs {
-
-    width: 600px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 20%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 3rem;
 
 }
 
 .gallerytext {
 
-    width: 200px;
-    margin: auto;
-    padding: 15px;
+    margin-bottom: 3rem;
+    align-self: left;
 
 }
 
 .footersection {
 
-    margin-top: 30px;
+    width: 90%;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-top: 0.15rem;
+    border-radius: 3rem;
+    border-style: solid;
+    border-color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
     color: white;
+
+}
+
+.adventure {
+
+    width: 90%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.15rem;
+    border-top: 0.15rem;
+    border-radius: 3rem;
+    border-style: solid;
+    border-color: white;
+
+}
+
+.screenreader {
+
+    display: none;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    border-bottom: 0.3rem;
+    border-top: 0.3rem;
+    border-radius: 3rem;
+    border-style: solid;
+    border-color: white;
+
+}
+
+.mobilealert {
+
+    display: none;
+    width: 90%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-bottom: 0.15rem;
+    border-top: 0.15rem;
+    border-radius: 3rem;
+    border-style: solid;
+    border-color: white;
+
+}
+
+@media speech {
+
+    #screenreader {
+
+        display: block;
+
+    }
+
+}
+
+@media screen and (max-width: 900px){
+
+    body {
+
+        max-width: 90%;
+        font-size: 2rem;
+        padding: 1rem;
+    
+    }
+
+}
+
+@media screen and (max-width: 800px){
+
+    body {
+
+        max-width: 90%;
+        font-size: 1.875rem;
+        padding: 0.9rem;
+    
+    }
+
+}
+
+@media screen and (max-width: 700px){
+
+    body {
+
+        max-width: 90%;
+        font-size: 1.75rem;
+        padding: 0.8rem;
+    
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    body {
+
+        max-width: 90%;
+        font-size: 1.625rem;
+        padding: 0.7rem;
+    
+    }
+
+}
+
+@media screen and (max-width: 500px){
+
+    /* Should change this in the future to be a nicer mobile design and not try to mimic the desktop style, since its style is meant to
+       look like an old terminal due to the adventure game embedded in it, which isn't present in mobile. */
+
+    /* I think neomorphism might be a cool way to present the mobile site. Could do some research on phone gyroscope functionality
+       to change the perceived lighting direction in real time? (So that as the phone moves, the neomorphism fake "light angle" would
+       change accordingly. */
+
+    body {
+
+        max-width: 90%;
+        font-size: 1.5rem;
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    
+    }
+
+    .adventure {
+
+        display: none;
+
+    }
+
+    .mobilealert {
+
+        display: block;
+
+    }
+
+    nav {
+
+        flex-wrap: wrap;
+
+    }
+
+    .fakebutton {
+
+        width: 40%;
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+    }
+
+    .footersection {
+
+        flex-wrap: wrap;
+
+    }
+
+    .galleryimgs {
+
+        flex-wrap: wrap;
+
+    }
+
+    .galleryimg {
+
+        width: 40%;
+
+    }
 
 }
